@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Aloisius Ivan HTML / CSS 3</title>
+</head>
+<style>
+    .container{
+        width: 588px;
+        height: 694px;
+        background: #F5F5F5;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+        border: 1px solid #e7e9eb;
+        margin: auto;
+        font-family: 'Roboto', sans-serif;
+    }
+    .container2{
+        width: 564px;
+        height: 463px;
+        background: #FFFFFF;
+        padding-top: 13px;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+    .container3{
+        width: 564px;
+        height: auto;
+        background: #F5F5F5;
+        padding: 12px;
+    }
+    .square {
+        height: 50px;
+        width: 50px;
+        background-color: #ff0000;
+    }
+    body{
+        background:#F5F5F5;
+        font-size:14px;
+    }
+    .profile{
+        border-radius: 50%;
+        height: 30px;
+        width: 30px;
+    }
+    .update {
+        display: grid;
+        grid-template-columns: 30px 1fr 21px;
+        grid-template-rows: repeat(2, 15px);
+        grid-column-gap: 6px;
+        grid-row-gap: 2px;
+    }
+    .caption {
+        padding-top: 21px;
+    }
+    .picture {
+        padding-top: 27px;
+    }
+    .post{
+        width: 564px;
+        height: 316px;
+        object-fit: cover;
+    }
+    .update1 { grid-area: 1 / 1 / 3 / 2; padding: 2.5px 0;}
+    .update2 { grid-area: 1 / 2 / 2 / 3; }
+    .update3 { grid-area: 2 / 2 / 3 / 3; font-size: 12px;}
+    .update4 { grid-area: 1 / 3 / 3 / 4; padding: 4px 0; text-align: right;}
+    .like {
+        display: grid;
+        grid-template-columns: 14px 72px 14px auto;
+        grid-template-rows: 19px;
+        grid-column-gap: 10px;
+        padding-top: 10px;
+    }
+    .like1 { grid-area: 1 / 1 / 2 / 2; }
+    .like2 { grid-area: 1 / 2 / 2 / 3; }
+    .like3 { grid-area: 1 / 3 / 2 / 4; }
+    .like4 { grid-area: 1 / 4 / 2 / 5; }
+    .comment {
+        display: grid;
+        grid-template-columns: 79px auto;
+        grid-template-rows: auto;
+        grid-column-gap: 7px;
+    }
+    .com1 { grid-area: 1 / 1 / 2 / 2; padding: 3px 0;}
+    .com2 { grid-area: 1 / 2 / 2 / 3; }
+    .parent {
+        display: grid;
+        grid-template-columns: 30px auto;
+        grid-template-rows: auto;
+        padding-top: 16px;
+        grid-column-gap: 6px;
+    }
+    .div1 { grid-area: 1 / 1 / 2 / 2; }
+    .div2 { grid-area: 1 / 2 / 2 / 3; }
+    .smaller { font-size:12px; }
+    .text { font-size:14px; }
+    .btn{
+        width: 107px;
+        height: 30px;
+        background: #0095f6;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 5px;
+        border: none;
+        cursor:pointer;
+        color: #FFFFFF;
+    }
+    .btn:focus-within{
+        background-color:#2AABFF;
+    }
+    textarea{
+        width: 524px;
+        height: 29px;
+        background: #FFFFFF;
+        box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.05);
+        border-radius: 3px;
+        border: 1px solid #e7e9eb;
+        font-family: 'Roboto', sans-serif;
+    }
+    textarea::placeholder{
+        font-family: 'Roboto', sans-serif;
+    }
+    .rep{
+        display: grid;
+        grid-template-columns: 34px auto;
+        grid-template-rows: auto;
+        grid-column-gap: 10px;
+        grid-row-gap: 0px;
+    }
+    .rep1 { grid-area: 1 / 1 / 2 / 2; padding: 0;}
+    .rep2 { grid-area: 1 / 2 / 2 / 3; padding: 0;}
+    #flag{
+        font-size: 18px;
+    }
+</style>
+<body text="#262626">
+    <div class="container">
+        <div class="container2">
+            <div class="update">
+                <div class="update1">
+                    <a href="#"><img src="https://i.ibb.co/Gx9b6Jv/aloykb.jpg" class="profile" alt="Avatar"></a>
+                </div>
+                <div class="update2">
+                    <strong><a href="#" style="text-decoration: none;"><font color="#0095f6">Aloisius Ivan</font></a></strong> posted on your timeline
+                </div>
+                <div class="update3">
+                    <font color="#8E8E8E">32 minutes ago</font>
+                </div>
+                <div class="update4">
+                    <a href="#"><i class="material-icons">more_vert</i></a>
+                </div>
+            </div>
+            <div class="caption">
+                Remember the place we were talking about the other night? Found it!
+            </div>
+            <div class="picture">
+                <img src="https://i.ibb.co/2tTng4C/sebastian-unrau-sp-p7uu-T0tw-unsplash.jpg" class="post">
+            </div>
+            <div class="like">
+                <div class="like1">
+                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -20 512 512"><path d="M0 190.9V185.1C0 115.2 50.52 55.58 119.4 44.1C164.1 36.51 211.4 51.37 244 84.02L256 96L267.1 84.02C300.6 51.37 347 36.51 392.6 44.1C461.5 55.58 512 115.2 512 185.1V190.9C512 232.4 494.8 272.1 464.4 300.4L283.7 469.1C276.2 476.1 266.3 480 256 480C245.7 480 235.8 476.1 228.3 469.1L47.59 300.4C17.23 272.1 .0003 232.4 .0003 190.9L0 190.9z"/></svg></a>
+                </div>
+                <div class="like2">
+                    Like (5)
+                </div>
+                <div class="Like3">
+                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -20 448 512"><path d="M448 127.1C448 181 405 223.1 352 223.1C326.1 223.1 302.6 213.8 285.4 197.1L191.3 244.1C191.8 248 191.1 251.1 191.1 256C191.1 260 191.8 263.1 191.3 267.9L285.4 314.9C302.6 298.2 326.1 288 352 288C405 288 448 330.1 448 384C448 437 405 480 352 480C298.1 480 256 437 256 384C256 379.1 256.2 376 256.7 372.1L162.6 325.1C145.4 341.8 121.9 352 96 352C42.98 352 0 309 0 256C0 202.1 42.98 160 96 160C121.9 160 145.4 170.2 162.6 186.9L256.7 139.9C256.2 135.1 256 132 256 128C256 74.98 298.1 32 352 32C405 32 448 74.98 448 128L448 127.1zM95.1 287.1C113.7 287.1 127.1 273.7 127.1 255.1C127.1 238.3 113.7 223.1 95.1 223.1C78.33 223.1 63.1 238.3 63.1 255.1C63.1 273.7 78.33 287.1 95.1 287.1zM352 95.1C334.3 95.1 320 110.3 320 127.1C320 145.7 334.3 159.1 352 159.1C369.7 159.1 384 145.7 384 127.1C384 110.3 369.7 95.1 352 95.1zM352 416C369.7 416 384 401.7 384 384C384 366.3 369.7 352 352 352C334.3 352 320 366.3 320 384C320 401.7 334.3 416 352 416z"/></svg></a>
+                </div>
+                <div class="Like4">
+                    Share (21)
+                </div>
+            </div>
+        </div>
+        <div class="container3">
+            <div class="comment">
+                <div class="com1">
+                    1 comments
+                </div>
+                <div class="com2">
+                    <i class="material-icons">expand_more</i>
+                </div>
+            </div>
+            <div class="parent">
+                <div class="div1">
+                    <a href="#"><img src="https://i.ibb.co/xjKxQ2J/ver.jpg" class="profile" alt="Avatar"></a>
+                </div>
+                <div class="div2">
+                    <strong><a href="#" style="text-decoration: none;"><font color="#262626">Veronika Verasita</font></a></strong>&nbsp;<span class="smaller"><font color="#8E8E8E">June 10, 2018</font></span>
+                    <br><span class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
+                    <div class="rep">
+                        <div class="rep1">
+                            <a href="#" style="text-decoration: none;"><span class="text"><font color="#0095f6">Reply</font></span></a>
+                        </div>
+                        <div class="rep2">
+                            <a href="#" ><i class="material-icons" id="flag">outlined_flag</i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="parent">
+                <div class="div1">
+                    <img src="https://i.ibb.co/GV6XhTf/blank.png" class="profile" alt="Avatar">
+                </div>
+                <div class="div2">
+                    <textarea placeholder="Add a comment..."></textarea>
+                    <a href="#"><button type="button" class="btn"><strong>Post Comment</strong></button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
